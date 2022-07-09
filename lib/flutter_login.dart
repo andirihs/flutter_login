@@ -26,15 +26,15 @@ import 'src/widgets/gradient_box.dart';
 import 'src/widgets/hero_text.dart';
 import 'theme.dart';
 
+export 'package:sign_in_button/src/button_list.dart';
+
 export 'src/models/login_data.dart';
 export 'src/models/login_user_type.dart';
 export 'src/models/signup_data.dart';
-export 'src/models/user_form_field.dart';
-export 'src/providers/login_messages.dart';
-export 'src/providers/login_theme.dart';
 export 'src/models/term_of_service.dart';
+export 'src/models/user_form_field.dart';
 export 'src/providers/auth.dart';
-export 'package:sign_in_button/src/button_list.dart';
+export 'src/providers/login_messages.dart';
 
 class LoginProvider {
   /// Used for custom sign-in buttons.

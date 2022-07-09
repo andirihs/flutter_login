@@ -18,6 +18,7 @@ import 'package:provider/provider.dart';
 import 'package:sign_in_button/sign_in_button.dart';
 
 import '../../../flutter_login.dart';
+import '../../providers/login_theme.dart';
 import '../animated_button.dart';
 import '../animated_icon.dart';
 import '../animated_text.dart';
