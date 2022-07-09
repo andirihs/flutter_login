@@ -288,6 +288,7 @@ class FlutterLogin extends StatefulWidget {
       this.showDebugButtons = false,
       this.loginProviders = const <LoginProvider>[],
       this.hideForgotPasswordButton = false,
+      this.hideSignUpButton,
       this.loginAfterSignUp = true,
       this.footer,
       this.hideProvidersTitle = false,
@@ -373,6 +374,9 @@ class FlutterLogin extends StatefulWidget {
 
   /// Set to true to hide the Forgot Password button
   final bool hideForgotPasswordButton;
+
+  /// Set to true to hide the switchAuthMode-Button.
+  final bool? hideSignUpButton;
 
   /// Set to false to return back to sign in page after successful sign up
   final bool loginAfterSignUp;
@@ -797,7 +801,8 @@ class _FlutterLoginState extends State<FlutterLogin>
                         passwordValidator: passwordValidator,
                         onSubmit: _reverseHeaderAnimation,
                         onSubmitCompleted: widget.onSubmitAnimationCompleted,
-                        hideSignUpButton: widget.onSignup == null,
+                        hideSignUpButton:
+                            widget.hideSignUpButton ?? widget.onSignup == null,
                         hideForgotPasswordButton:
                             widget.hideForgotPasswordButton,
                         loginAfterSignUp: widget.loginAfterSignUp,
